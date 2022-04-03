@@ -199,18 +199,20 @@ export const loadHotelsList = () => async (dispatch) => {
 export const sortHotels =
   ({ hotels, sortOption }) =>
   async (dispatch) => {
-    if (sortOption == 'low-high') {
-      hotels.sort(function (a, b) {
-        return a.offer.displayPrice.amount - b.offer.displayPrice.amount;
-      });
-    } else {
-      hotels.sort(function (a, b) {
-        return b.offer.displayPrice.amount - a.offer.displayPrice.amount;
+    if (hotels !== null) {
+      if (sortOption == 'low-high') {
+        hotels.sort(function (a, b) {
+          return a.offer.displayPrice.amount - b.offer.displayPrice.amount;
+        });
+      } else {
+        hotels.sort(function (a, b) {
+          return b.offer.displayPrice.amount - a.offer.displayPrice.amount;
+        });
+      }
+
+      dispatch({
+        type: SET_HOTELS,
+        payload: { hotels },
       });
     }
-
-    dispatch({
-      type: SET_HOTELS,
-      payload: { hotels },
-    });
   };
