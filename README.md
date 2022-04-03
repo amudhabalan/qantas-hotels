@@ -1,9 +1,18 @@
-# Qantas Hotels written in React & Redux
+# Qantas Hotels
 
-- Please run `npm install` to download all the dependencies
+- After cloning this repo, Please run `npm install` to install the dependencies
 - Please run `npm start` to start the development server
+- The list of hotels can be sorted by price
+
+## Tech used
+
+- React 18 is used (comes packaged with Create React App)
 - Redux is used as the state store
-- `useSelector` hook is used to read state from Redux store
+- Uses styled components for styling
+- Uses `useState` hook for component level state
+- Uses `useEffect` hook for side effects
+- Uses `useSelector` hook to read state from Redux store
+- Uses `React Router` for routing
 
 ## Unit Tests
 
