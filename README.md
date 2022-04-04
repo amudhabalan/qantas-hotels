@@ -20,7 +20,7 @@
 - Please run `npm test` to run the unit tests
 - Some coverage has been given to Hotel & ResultsCount component to demonstrate the basics of testing
 
-##ToDo
+## ToDo
 - Ratings component
 - Breaking down the Hotel component in to more components , so they can tested individually
 - Cleaning up the sorting functionality for initial load
